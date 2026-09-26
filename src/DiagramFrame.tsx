@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Modal, Pressable, ScrollView, Text, View, useWindowDimensions} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import Svg from 'react-native-svg';
 
 type Props={title:string;description:string;children:React.ReactNode;canvasWidth?:number;canvasHeight?:number};
@@ -18,6 +18,8 @@ export default function DiagramFrame({title,description,children,canvasWidth=300
   <Text style={{fontSize:16,lineHeight:25,color:ink}}>{description}</Text>
   {action(`Enlarge diagram: ${title}`,()=>{setZoom(1);setOpen(true);})}
   <Modal visible={open} animationType="none" onRequestClose={()=>setOpen(false)}>
+   {/* Native modals need their own safe-area measurement root. */}
+   <SafeAreaProvider style={{flex:1,backgroundColor:'#F2F5ED'}}>
    <SafeAreaView style={{flex:1,backgroundColor:'#F2F5ED'}} accessibilityViewIsModal onAccessibilityEscape={()=>setOpen(false)}>
     <ScrollView contentContainerStyle={{padding:18,gap:16}}>
      {action('Close enlarged diagram',()=>setOpen(false))}
@@ -28,6 +30,7 @@ export default function DiagramFrame({title,description,children,canvasWidth=300
      <Text selectable style={{fontSize:18,lineHeight:28,color:ink}}>{description}</Text>
     </ScrollView>
    </SafeAreaView>
+   </SafeAreaProvider>
   </Modal>
  </View>;
 }
