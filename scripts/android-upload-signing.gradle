@@ -12,7 +12,7 @@ allprojects { project ->
             upload.keyAlias = 'learning-trails-upload'
             upload.keyPassword = secretFile.text.trim()
             project.android.buildTypes.release.signingConfig = upload
-            project.android.defaultConfig.versionCode = 3
+            project.android.defaultConfig.versionCode = new groovy.json.JsonSlurper().parse(new File(root, "app.json")).expo.android.versionCode
         }
     }
 }

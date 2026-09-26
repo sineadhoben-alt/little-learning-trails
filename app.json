@@ -8,11 +8,11 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.transfertrainerni.learning.preview",
-      "buildNumber": "3"
+      "buildNumber": "4"
     },
     "android": {
       "package": "com.transfertrainerni.learning.preview",
-      "versionCode": 3,
+      "versionCode": 4,
       "blockedPermissions": [
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.WRITE_EXTERNAL_STORAGE",
