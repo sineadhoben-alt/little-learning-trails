@@ -1,0 +1,13 @@
+import {writeFileSync} from 'node:fs';
+import {activities,sources} from '../src/content.ts';
+import {coverage} from '../src/coverage.ts';
+const text=['# Curriculum coverage register', '', 'Little Learning Trails — Maths & English · 26 September 2026', '',
+'Sources: [CCEA KS2 Mathematics and Numeracy]('+sources.maths+') and [CCEA KS2 Language and Literacy]('+sources.english+'). Topic labels are paraphrases of the minimum-content statements. This register maps topic opportunities, not a validated assessment framework or evidence of pupil mastery.', '',
+`${coverage.length} topic statements map to ${activities.length} implemented trails, each with three tasks. Closed-answer logic and mathematical calculations have automated checks. Open work has adult guidance and reflection. Every individual activity awaits detailed educational review. Sinéad Hoben has approved the educational approach, drawing on primary and post-primary teaching experience.`, '',
+'| Ref | CCEA source/page | Topic | Implemented activities | Status |', '|---|---|---|---|---|',
+...coverage.map(r=>`| ${r.id} | ${r.source}, p${r.page} | ${r.topic} | ${r.activities.map(id=>activities.find(a=>a.id===id).title).join('; ')} | Implemented; teacher review pending |`), '',
+'## Activity objectives', '',
+...activities.map(a=>`- **${a.title}** (${a.id}; ${a.subject}, ${a.strand}): ${a.objective} Format: ${a.kind}. Three levels implemented; teacher review pending.`), '',
+'## Added guided provision', '', 'All 88 rows now also have guided projects with supplied resources, saved evidence and adult review criteria. See [implementation map](review/NEXT-ACTIONS-IMPLEMENTATION.md), [Maths action tracker](MATHS-ACTION-TRACKER.md) and [English action tracker](ENGLISH-CURRICULUM-ACTIONS.md). There are 629 additional practice variants and 186 modelled steps; eight longer original texts support reading. These additions still require qualified human review.', '', '## Remaining depth and validation', '', 'Calibrated diagnostics, broader longitudinal practice evidence and qualified teacher validation remain outstanding. Basic saved charts, coordinate plots and labelled compositions are included; a full spreadsheet engine, media editor and publishing portfolio are not. Practical tasks currently ask learners to use paper, real objects, a partner or a separate tool where specified. Coverage of a topic does not mean every possible skill within it has sufficient practice.', ''].join('\n');
+writeFileSync(new URL('../docs/CURRICULUM.md',import.meta.url),text);
+console.log(`${coverage.length} topic statements; ${activities.length} trails; ${activities.reduce((n,a)=>n+a.tasks.length,0)} tasks.`);

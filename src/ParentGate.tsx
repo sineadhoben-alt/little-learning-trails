@@ -1,0 +1,23 @@
+import React,{useEffect,useRef,useState} from 'react';
+import {Modal,View,Text,TextInput,Pressable,ScrollView,StyleSheet} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import {PARENT_KEY,parseParentAccess,createParentAccess,checkParentAccess,validPIN,type ParentAccess} from './parentAccess';
+export default function ParentGate({onClose,onUnlock}:{onClose:()=>void;onUnlock:()=>void}){
+ const [record,setRecord]=useState<ParentAccess|null>(null),[ready,setReady]=useState(false),[pin,setPin]=useState(''),[confirm,setConfirm]=useState(''),[message,setMessage]=useState(''),[busy,setBusy]=useState(false);const running=useRef(false),mounted=useRef(true);
+ const close=()=>{mounted.current=false;onClose();};
+ useEffect(()=>{mounted.current=true;AsyncStorage.getItem(PARENT_KEY).then(raw=>{if(!mounted.current)return;setRecord(raw?parseParentAccess(raw):null);setReady(true);}).catch(()=>{if(mounted.current)setMessage('Parent access could not be loaded. Close this window and try again. Your learning work has not been changed.');});return()=>{mounted.current=false;};},[]);
+ const submit=async()=>{
+  if(!ready||running.current)return;
+  if(!validPIN(pin)){setMessage('Please enter six digits.');return;}
+  if(!record&&pin!==confirm){setMessage('The two PINs do not match.');return;}
+  running.current=true;setBusy(true);setMessage('');
+  try{
+   const result=record?checkParentAccess(record,pin):{allowed:true,record:createParentAccess(pin)};
+   await AsyncStorage.setItem(PARENT_KEY,JSON.stringify(result.record));if(!mounted.current)return;setRecord(result.record);setPin('');setConfirm('');
+   if(result.allowed)onUnlock();else setMessage(result.record.retryAfter>Date.now()?'Please wait one minute before trying again.':'That PIN did not match. Please ask your adult.');
+  }catch{if(mounted.current)setMessage('Could not save parent access. Please retry. Learning progress has not been changed.');}
+  finally{running.current=false;if(mounted.current)setBusy(false);}
+ };
+ return <Modal transparent animationType="none" onRequestClose={close}><View style={styles.scrim}><ScrollView contentContainerStyle={styles.content}><View accessibilityViewIsModal style={styles.card}><Text accessibilityRole="header" style={styles.heading}>For your grown-up</Text><Text style={styles.copy}>{record?'Enter your six-digit parent PIN to open adult controls.':'Please hand the device to a parent or carer. Choose a six-digit PIN for adult reviews, settings and external links. Keep it private and record it somewhere safe.'}</Text><Text style={styles.copy}>This is a local access gate, not identity verification or encryption of learning work. It locks when you leave adult controls or put the app in the background.</Text>{ready&&<><Text style={styles.copy}>Parent PIN</Text><TextInput secureTextEntry keyboardType="number-pad" accessibilityLabel="Parent PIN" value={pin} onChangeText={setPin} maxLength={6} style={styles.input}/>{!record&&<><Text style={styles.copy}>Confirm parent PIN</Text><TextInput secureTextEntry keyboardType="number-pad" accessibilityLabel="Confirm parent PIN" value={confirm} onChangeText={setConfirm} maxLength={6} style={styles.input}/><Text style={styles.copy}>There is no account-based PIN recovery in this beta. If it is forgotten, ask the app owner for help; do not erase your child’s progress.</Text></>}</>}{!!message&&<Text accessibilityLiveRegion="polite" style={styles.copy}>{message}</Text>}<Pressable accessibilityRole="button" accessibilityState={{disabled:!ready||busy}} disabled={!ready||busy} onPress={submit} style={styles.button}><Text style={styles.buttonText}>{busy?'Saving…':record?'Unlock adult controls':'Set PIN and continue'}</Text></Pressable><Pressable accessibilityRole="button" onPress={close} style={[styles.button,{backgroundColor:'#EDF3E6'}]}><Text style={[styles.buttonText,{color:'#203E36'}]}>Back to learning</Text></Pressable></View></ScrollView></View></Modal>;
+}
+const styles=StyleSheet.create({scrim:{flex:1,backgroundColor:'#203E3699',justifyContent:'center'},content:{flexGrow:1,justifyContent:'center',padding:20},card:{alignSelf:'center',width:'100%',maxWidth:520,padding:24,gap:16,borderRadius:20,backgroundColor:'#FFF'},heading:{fontSize:25,fontWeight:'700',color:'#203E36'},copy:{fontSize:16,lineHeight:24,color:'#203E36'},input:{fontSize:22,borderWidth:1,borderColor:'#53665E',padding:14,minHeight:50,borderRadius:10,color:'#203E36'},button:{minHeight:50,justifyContent:'center',alignItems:'center',padding:15,borderRadius:12,backgroundColor:'#244E40'},buttonText:{fontSize:16,fontWeight:'700',color:'#FFF'}});

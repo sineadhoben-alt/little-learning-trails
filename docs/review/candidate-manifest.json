@@ -1,0 +1,18 @@
+{
+  "name": "Little Learning Trails — Maths & English",
+  "version": "0.2.0",
+  "build": 2,
+  "recordedAt": "2026-09-26T20:30:49.754Z",
+  "sourceManifestSHA256": "8dde2d9d99ac06240096c91bb6901a23ced1bd5503e9d218e49235bd87202131",
+  "sourceFiles": 32,
+  "reviewItems": 1089,
+  "decision": "HOLD: human review, supervised evaluation, physical-device/accessibility evidence and distribution permissions pending",
+  "android": {
+    "path": "releases/learning-trails-0.2.0-android.apk",
+    "sha256": "ac7eb0b7c382a36eb5843c479272a9d01e79de9111b58c2424b63402ac72c7f9"
+  },
+  "iosSimulator": {
+    "path": "releases/learning-trails-0.2.0-ios-simulator.zip",
+    "sha256": "273b350063953e430dbc33530b50bd9e8ca552ac789899d2039630b53bd70284"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Little Learning Trails",
+    "slug": "transfer-trainer-ni-learning",
+    "version": "0.2.0",
+    "scheme": "learningtrails",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.transfertrainerni.learning.preview",
+      "buildNumber": "3"
+    },
+    "android": {
+      "package": "com.transfertrainerni.learning.preview",
+      "versionCode": 3,
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "name": "Little Learning Trails \u2014 Maths & English",
+      "bundler": "metro"
+    },
+    "icon": "./assets/icon.png",
+    "plugins": [
+      "./plugins/withSceneLifecycle.cjs"
+    ]
+  }
+}

@@ -1,0 +1,2960 @@
+{
+  "reviewDate": "2026-09-26",
+  "source": "https://ccea.org.uk/document/2066",
+  "scope": "Static educational audit of all105 Maths tasks, source diagrams and checking logic. No child testing or professional sign-off claimed.",
+  "tasks": [
+    {
+      "taskId": "shop:0",
+      "activityId": "shop",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "runtime-release-blocker; mathematical-key-pass",
+      "prompt": "Buy 2 apples and 1 juice. You have £5. How much change will you get? Enter pounds.",
+      "evidence": "£5−(2×£0.50+£1)=£3. Exact basket requirement is clear.",
+      "answerKey": 3,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Fix sparse basket counts persistence: tapping second item before first can save null holes that parseState rejects on reopening. Root reviewer reproduced on isolated preview; see progress-failure.png. Retest all item-entry orders and close/reopen with unfinished baskets.",
+      "issueId": "TECH-01",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "shop:1",
+      "activityId": "shop",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "runtime-release-blocker; mathematical-key-pass",
+      "prompt": "Buy 2 sandwiches and 1 juice. You have £10. How much change will you get? Enter pounds.",
+      "evidence": "£10−(2×£2.35+£1.25)=£4.05. Pence conversion and hint agree.",
+      "answerKey": 4.05,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Fix sparse basket counts persistence: tapping second item before first can save null holes that parseState rejects on reopening. Root reviewer reproduced on isolated preview; see progress-failure.png. Retest all item-entry orders and close/reopen with unfinished baskets.",
+      "issueId": "TECH-01",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "shop:2",
+      "activityId": "shop",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "runtime-release-blocker; mathematical-key-pass",
+      "prompt": "Buy 3 rolls and 2 milks. You have £12. How much change will you get? Enter pounds.",
+      "evidence": "£12−(3×£1.85+2×£1.40)=£3.65. Integer-pence calculation agrees.",
+      "answerKey": 3.65,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Fix sparse basket counts persistence: tapping second item before first can save null holes that parseState rejects on reopening. Root reviewer reproduced on isolated preview; see progress-failure.png. Retest all item-entry orders and close/reopen with unfinished baskets.",
+      "issueId": "TECH-01",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "garden:0",
+      "activityId": "garden",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Build a rectangle 3 m wide and 2 m high. Each square is 1 m². What is its area in m²?",
+      "evidence": "3×2=6 m²; interactive grid must be 3 by 2.",
+      "answerKey": 6,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "garden:1",
+      "activityId": "garden",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Build a rectangle 4 m wide and 3 m high. How many metres of fence go all the way around it?",
+      "evidence": "2×(4+3)=14 m; explanation distinguishes area correctly.",
+      "answerKey": 14,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "garden:2",
+      "activityId": "garden",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Build a rectangle 6 m wide and 4 m high. One quarter is a pond. How many m² remain for plants?",
+      "evidence": "6×4×3/4=18 m²; pond area is 6 m².",
+      "answerKey": 18,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "fractions:0",
+      "activityId": "fractions",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Tap exactly half of the 8 tiles. How many tiles is that?",
+      "evidence": "8/2=4 selected equal tiles.",
+      "answerKey": 4,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "fractions:1",
+      "activityId": "fractions",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "Tap exactly one quarter of the 12 tiles. How many tiles is that?",
+      "evidence": "12/4=3 selected equal tiles.",
+      "answerKey": 3,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Half-shaded reference does not model the requested quarter. Use one-quarter shading labelled 3/12 or explicitly label half as a different reference.",
+      "issueId": "M-DIAG",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "fractions:2",
+      "activityId": "fractions",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "Tap 25% of the 20 tiles. How many tiles is that?",
+      "evidence": "20×25/100=5 selected equal tiles.",
+      "answerKey": 5,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Half-shaded reference does not model 25%; show 5/20 and 25/100 alongside 1/4.",
+      "issueId": "M-DIAG",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "data:0",
+      "activityId": "data",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "These are sightings in a pretend garden survey. How many more robins than wrens were seen?",
+      "evidence": "6−2=4 sightings; explanation correctly avoids equating sightings with individuals.",
+      "answerKey": 4,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "data:1",
+      "activityId": "data",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "Each count is from one equal-length watch. How many sightings were recorded altogether?",
+      "evidence": "8+5+7=20. Easier addition follows comparison rather than clear difficulty increase.",
+      "answerKey": 20,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Addition of three values is not consistently harder than difference comparison. Separate chart-reading subskills and calibrate levels.",
+      "issueId": "M-PROG",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "data:2",
+      "activityId": "data",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "What is the mean number of sightings per watch?",
+      "evidence": "(6+10+5+7)/4=7; same-length watch context supports comparison.",
+      "answerKey": 7,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "place-value:0",
+      "activityId": "place-value",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "What is the value of the 7 in 3,742?",
+      "evidence": "7 hundreds=700.",
+      "answerKey": 700,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "place-value:1",
+      "activityId": "place-value",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Which list goes from smallest to largest?",
+      "evidence": "4.05<4.50<4.55; all distractors incorrect.",
+      "answerKey": "4.05, 4.5, 4.55",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "place-value:2",
+      "activityId": "place-value",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "Write the number made from 40,000 + 600 + 8 + 0.03. Do not use commas.",
+      "evidence": "40000+600+8+0.03=40608.03; explanation correct.",
+      "answerKey": 40608.03,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Extend place-value scaffold to ten-thousands; current columns stop at thousands despite 40, 608.03 task.",
+      "issueId": "M-DIAG",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "decimal-scaling:0",
+      "activityId": "decimal-scaling",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "What is 34 × 10?",
+      "evidence": "34×10=340. Digit-value wording avoids a move-the-decimal misconception.",
+      "answerKey": 340,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "decimal-scaling:1",
+      "activityId": "decimal-scaling",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "What is 7.25 × 100?",
+      "evidence": "7.25×100=725.",
+      "answerKey": 725,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "decimal-scaling:2",
+      "activityId": "decimal-scaling",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "What is 643 ÷ 100?",
+      "evidence": "643/100=6.43.",
+      "answerKey": 6.43,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "estimate:0",
+      "activityId": "estimate",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Round 347 to the nearest ten.",
+      "evidence": "347 rounds to 350; distances 3 and 7 correct.",
+      "answerKey": 350,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "estimate:1",
+      "activityId": "estimate",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Estimate 198 + 403 by rounding each number to the nearest hundred.",
+      "evidence": "198→200 and 403→400; 600 approximate, 601 exact.",
+      "answerKey": 600,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "estimate:2",
+      "activityId": "estimate",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A pupil says 49 × 21 = 10,029. Which estimate best shows a problem?",
+      "evidence": "49×21=1029, near 50×20=1000; only same-operation estimate fits.",
+      "answerKey": "50 × 20 = 1,000",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "negative:0",
+      "activityId": "negative",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Which temperature is colder?",
+      "evidence": "−3<0<2; −3°C coldest.",
+      "answerKey": "−3°C",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "negative:1",
+      "activityId": "negative",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "The temperature rises from −4°C to 3°C. By how many degrees does it rise?",
+      "evidence": "3−(−4)=7 degrees.",
+      "answerKey": 7,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "negative:2",
+      "activityId": "negative",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A lift is at floor 2 and goes down 5 floors. Where is it?",
+      "evidence": "2−5=−3; floor-zero model explicitly stated.",
+      "answerKey": "Floor −3",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "sequences:0",
+      "activityId": "sequences",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Continue the sequence: 6, 10, 14, 18, …",
+      "evidence": "Constant step 4 gives 22.",
+      "answerKey": 22,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "sequences:1",
+      "activityId": "sequences",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Continue the sequence: 3, 6, 12, 24, …",
+      "evidence": "Doubling gives 48.",
+      "answerKey": 48,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "sequences:2",
+      "activityId": "sequences",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Make a sequence of five whole numbers using two alternating rules. Ask a partner to predict two more. Explain your rules and test their prediction.",
+      "evidence": "Alternating-rule open task; rubric accepts consistent calculations and acknowledges non-uniqueness.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "factors:0",
+      "activityId": "factors",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "How many factors does 12 have? Count each different positive whole-number factor once.",
+      "evidence": "Positive divisors 1, 2, 3, 4, 6, 12: six.",
+      "answerKey": 6,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "factors:1",
+      "activityId": "factors",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Which number is prime?",
+      "evidence": "23 prime; 21=3×7 and 25=5².",
+      "answerKey": "23",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "factors:2",
+      "activityId": "factors",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Calculate 4 cubed minus 5 squared.",
+      "evidence": "4³−5²=64−25=39.",
+      "answerKey": 39,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "machines:0",
+      "activityId": "machines",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A machine adds 7. What is its output for input 8?",
+      "evidence": "8+7=15.",
+      "answerKey": 15,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "machines:1",
+      "activityId": "machines",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A machine doubles a number and then adds 3. What is its output for input 6?",
+      "evidence": "2×6+3=15.",
+      "answerKey": 15,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "machines:2",
+      "activityId": "machines",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A machine multiplies by 3 then subtracts 2. Its output is 19. What was its input?",
+      "evidence": "Inverse: (19+2)/3=7; forward check 19.",
+      "answerKey": 7,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "unknown:0",
+      "activityId": "unknown",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "a + 8 = 15. What is a?",
+      "evidence": "a=15−8=7.",
+      "answerKey": 7,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "unknown:1",
+      "activityId": "unknown",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "4 × b = 36. What is b?",
+      "evidence": "b=36/4=9.",
+      "answerKey": 9,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "unknown:2",
+      "activityId": "unknown",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "3 × c + 5 = 26. What is c?",
+      "evidence": "c=(26−5)/3=7.",
+      "answerKey": 7,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "mental:0",
+      "activityId": "mental",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Work out 38 + 9 mentally.",
+      "evidence": "38+10−1=47.",
+      "answerKey": 47,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "mental:1",
+      "activityId": "mental",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Work out 203 − 98 mentally.",
+      "evidence": "203−100+2=105.",
+      "answerKey": 105,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "mental:2",
+      "activityId": "mental",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Work out 4.75 + 2.99.",
+      "evidence": "4.75+3−0.01=7.74.",
+      "answerKey": 7.74,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "tables:0",
+      "activityId": "tables",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "There are 4 trays with 5 buns on each. How many buns?",
+      "evidence": "4×5=20.",
+      "answerKey": 20,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "tables:1",
+      "activityId": "tables",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Seven groups have 8 counters each. How many counters?",
+      "evidence": "7×8=56; 5×8+2×8=40+16.",
+      "answerKey": 56,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "tables:2",
+      "activityId": "tables",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "90 counters are shared equally among 10 groups. How many per group?",
+      "evidence": "90/10=9; inverse fact 10×9=90.",
+      "answerKey": 9,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "operations:0",
+      "activityId": "operations",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Find (12 + 8) ÷ 4.",
+      "evidence": "(12+8)/4=5; bracket order correct.",
+      "answerKey": 5,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "operations:1",
+      "activityId": "operations",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Three ribbons are each 1.25 m long. What is their total length in metres?",
+      "evidence": "3×1.25=3.75 metres.",
+      "answerKey": 3.75,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "operations:2",
+      "activityId": "operations",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Share 9.6 litres equally among 4 jugs, then pour 0.35 litres out of each jug. How much remains in each jug?",
+      "evidence": "9.6/4−0.35=2.05 litres each.",
+      "answerKey": 2.05,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "fraction-links:0",
+      "activityId": "fraction-links",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Which fraction is equal to one half?",
+      "evidence": "2/4=1/2; other options unequal.",
+      "answerKey": "2/4",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "fraction-links:1",
+      "activityId": "fraction-links",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "What is three quarters of 20?",
+      "evidence": "20×3/4=15.",
+      "answerKey": 15,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Add a 20-object representation with 3 of 4 equal groups; current half strips do not model 3/4.",
+      "issueId": "M-DIAG",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "fraction-links:2",
+      "activityId": "fraction-links",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "Which list contains three equal values?",
+      "evidence": "3/5=0.6=60%; distractors each contain unequal values.",
+      "answerKey": "3/5, 0.6, 60%",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Use fifths/tenths/hundredths equivalent to 3/5; half strips support a different equivalence.",
+      "issueId": "M-DIAG",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "budget:0",
+      "activityId": "budget",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "With an adult, plan a pretend £6 picnic. Apples cost £1 each, rolls £2 and water £1. Choose food and a drink within the budget. Explain your choices.",
+      "evidence": "Many valid baskets; rubric requires total≤£6, food and drink; per-unit prices stated.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "budget:1",
+      "activityId": "budget",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A pack of 4 pencils costs £1.20. A pack of 6 costs £2.10. Find each price per pencil. Decide which offers better value, then discuss how to keep money or a payment card safe.",
+      "evidence": "120/4=30 p; 210/6=35 p. Unit-price conclusion correct; discussion distinguishes need from cheapness.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "budget:2",
+      "activityId": "budget",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "You want a £15 book. You have £6 and save £3 each week. Make a savings plan and compare paying cash with paying by card, with an adult.",
+      "evidence": "£15−£6=£9;£9/£3=3 weeks. Comparison appropriately open.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "currency:0",
+      "activityId": "currency",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Which symbol represents the euro?",
+      "evidence": "€ denotes euro;£ pound;% percent.",
+      "answerKey": "€",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "currency:1",
+      "activityId": "currency",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "For this pretend exchange only, £1 buys €1.20. How many euros does £5 buy? Ignore fees.",
+      "evidence": "5×1.20=€6 at explicitly invented rate.",
+      "answerKey": 6,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "currency:2",
+      "activityId": "currency",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "For this pretend exchange only, £1 buys €1.25. How many pounds buy €10? Ignore fees.",
+      "evidence": "10/1.25=£8 at explicitly invented rate.",
+      "answerKey": 8,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "measure-estimate:0",
+      "activityId": "measure-estimate",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Estimate the length of a book in centimetres, then measure it with a ruler. Compare the two values.",
+      "evidence": "Book-length estimate before ruler measurement; zero alignment correctly emphasised.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "measure-estimate:1",
+      "activityId": "measure-estimate",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "With an adult, choose tools to measure a cup’s capacity, an apple’s mass and a short walk’s duration. Estimate first, measure, then record units.",
+      "evidence": "Jug/scales/clock are suitable; estimates and units required, safe objects specified.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "measure-estimate:2",
+      "activityId": "measure-estimate",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Measure one object’s length twice. Then discuss how a temperature such as 18.5°C can lie between 18°C and 19°C. Explain why measurements are not limited to whole numbers.",
+      "evidence": "Repeated length plus 18.5 between 18 and 19 addresses continuity and precision qualitatively.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "units:0",
+      "activityId": "units",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "How many centimetres are in 2 metres?",
+      "evidence": "2 m=200 cm.",
+      "answerKey": 200,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "units:1",
+      "activityId": "units",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "How many millilitres are in 1.75 litres?",
+      "evidence": "1.75 L=1750 mL.",
+      "answerKey": 1750,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "units:2",
+      "activityId": "units",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A bag holds 2 kg of rice. After using 650 g, how many grams remain?",
+      "evidence": "2000 g−650 g=1350 g.",
+      "answerKey": 1350,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "volume:0",
+      "activityId": "volume",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "A box holds 3 unit cubes in one row and has just one row and one layer. What is its volume in cubic units?",
+      "evidence": "Three unit cubes occupy 3 cubic units, provided they exactly fill the box.",
+      "answerKey": 3,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Say three unit cubes exactly fill the box without gaps; mere capacity to hold 3 does not uniquely determine volume. Render 3 actual cubes.",
+      "issueId": "M-WORD",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "volume:1",
+      "activityId": "volume",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A cuboid is 4 cm long, 3 cm wide and 2 cm high. What is its volume in cm³?",
+      "evidence": "4×3×2=24 cm³.",
+      "answerKey": 24,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "volume:2",
+      "activityId": "volume",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A cuboid has volume 60 cm³, length 5 cm and width 4 cm. What is its height in cm?",
+      "evidence": "60/(5×4)=3 cm.",
+      "answerKey": 3,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "scale:0",
+      "activityId": "scale",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "On a map, 1 cm stands for 2 m. A path is 4 cm on the map. How long is the real path in metres?",
+      "evidence": "4×2=8 m.",
+      "answerKey": 8,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "scale:1",
+      "activityId": "scale",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "On a drawing, 1 cm stands for 5 m. How many centimetres represent 35 m?",
+      "evidence": "35/5=7 cm.",
+      "answerKey": 7,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "scale:2",
+      "activityId": "scale",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Draw a 12 m by 8 m garden using a scale of 1 cm to 2 m. Add a 4 m straight path and a key explaining your symbols.",
+      "evidence": "12/2=6 cm; 8/2=4 cm; 4/2=2 cm path. Rubric and unit distinction correct.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "time:0",
+      "activityId": "time",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "An analogue clock has its minute hand on 6 and hour hand halfway from 3 to 4. What time is it?",
+      "evidence": "Minute hand 6, hour halfway 3–4 is 3:30; rendered hour vector 39, 10 is approximately 104.4° clockwise from 12, close to 105°.",
+      "answerKey": "3:30",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "time:1",
+      "activityId": "time",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "What is 17:45 in 12-hour time?",
+      "evidence": "17:45=5:45 pm.",
+      "answerKey": "5:45 pm",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "time:2",
+      "activityId": "time",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A bus timetable shows departure 09:48 and arrival 10:25. How long is the journey in minutes?",
+      "evidence": "09:48→10:00=12 min; plus 25 min=37.",
+      "answerKey": 37,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "shapes:0",
+      "activityId": "shapes",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Which shape has exactly three straight sides?",
+      "evidence": "Triangle has 3 straight sides; other offered polygons do not.",
+      "answerKey": "Triangle",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "shapes:1",
+      "activityId": "shapes",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Which statement must be true of every rectangle?",
+      "evidence": "Every rectangle has 4 right angles; squares included explicitly, distractors false.",
+      "answerKey": "It has four right angles",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "shapes:2",
+      "activityId": "shapes",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "Draw a regular pentagon and an irregular pentagon. Compare sides and angles. Draw a congruent copy of one shape and explain what congruent means.",
+      "evidence": "Regular pentagon equal sides AND angles; congruence same shape and size. Template permitted but absent.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Supply a printable/on-screen regular-pentagon template or construction guidance and matching congruent examples.",
+      "issueId": "M-SUPPORT",
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "symmetry:0",
+      "activityId": "symmetry",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Fold paper and cut a safe shape with adult help. Open it and draw the fold line. Explain how the halves match.",
+      "evidence": "Folding can verify reflection symmetry; safe alternative offered.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "symmetry:1",
+      "activityId": "symmetry",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Draw an L shape on squared paper and a mirror line beside it. Reflect each corner across the line at the same distance. Test whether the L has rotational symmetry before a full turn.",
+      "evidence": "Usual block L has rotation order 1; reflected vertices must have equal perpendicular distances.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "symmetry:2",
+      "activityId": "symmetry",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Use paper squares and equilateral triangles to try tiling a flat surface without gaps or overlaps. Then rotate a square and record how many times it matches itself in one full turn.",
+      "evidence": "Squares and equilateral triangles tessellate individually; square rotation order 4 at 90, 180, 270, 360.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "solids:0",
+      "activityId": "solids",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "How many square faces does a cube have?",
+      "evidence": "Cube 6 square faces.",
+      "answerKey": 6,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Show a cube for the cube question; shared illustration is explicitly a cuboid with unequal edge lengths.",
+      "issueId": "M-DIAG",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "solids:1",
+      "activityId": "solids",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "How many vertices (corners) does a cuboid have?",
+      "evidence": "Cuboid 8 vertices; 12 edges and 6 faces correctly explained.",
+      "answerKey": 8,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "solids:2",
+      "activityId": "solids",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "With adult help, make a cube net from six paper squares. Fold or imagine folding it. Label faces, edges and vertices, and explain why some arrangements of six squares are not nets.",
+      "evidence": "Six-square net with 4 in row and opposite attachments to second square folds to cube; counts 6/12/8.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "directions:0",
+      "activityId": "directions",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "You face north and turn a quarter turn clockwise. Which way do you face?",
+      "evidence": "North plus 90° clockwise=east.",
+      "answerKey": "East",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "directions:1",
+      "activityId": "directions",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Which compass direction lies halfway between south and west?",
+      "evidence": "Between south and west=south-west.",
+      "answerKey": "South-west",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "directions:2",
+      "activityId": "directions",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "In the drawing pad below, act as a drawing robot. Start facing up. Write FORWARD 3 then RIGHT 90 on separate lines, four times. Draw the path, then change your commands to draw a rectangle that is not a square.",
+      "evidence": "Four 3-unit moves and 90° right turns close a 3×3 square; alternate 4/2 twice closes non-square rectangle.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "angles:0",
+      "activityId": "angles",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "An angle is 60°. Which type is it?",
+      "evidence": "60° acute; distractors obtuse/reflex wrong.",
+      "answerKey": "Acute",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "angles:1",
+      "activityId": "angles",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Two angles of a triangle are 50° and 60°. What is the third angle in degrees?",
+      "evidence": "180−50−60=70°.",
+      "answerKey": 70,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "angles:2",
+      "activityId": "angles",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Use a protractor to draw 120° and a reflex angle of 240°. Draw a quadrilateral, measure its four interior angles and add them.",
+      "evidence": "120° obtuse; complementary full-turn region 240° reflex; simple quadrilateral sum 360°.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "coordinates:0",
+      "activityId": "coordinates",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "For the point (3, 2), how do you travel from the origin?",
+      "evidence": "(3, 2) means 3 right, 2 up; alternatives swapped or negative.",
+      "answerKey": "3 right, 2 up",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "coordinates:1",
+      "activityId": "coordinates",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "On squared paper, label axes from 0 to 6. Plot (1,1), (5,1), (5,3), (1,3) and join them in order. Name the shape.",
+      "evidence": "Specified vertices form 4×2 rectangle; joining last to first implicit.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "coordinates:2",
+      "activityId": "coordinates",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Plot a triangle with vertices (1,1), (4,1), (1,5). Move every vertex 2 units right and 1 unit up. Record the new coordinates.",
+      "evidence": "Adding(2, 1) gives(3, 2),(6, 2),(3, 6).",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "collect-data:0",
+      "activityId": "collect-data",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Count three kinds of objects in one room. Make a tally table and describe which kind is most common. Do not record people’s names.",
+      "evidence": "Three non-overlapping object categories, tally and modal category; tally totals need adult inspection.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "collect-data:1",
+      "activityId": "collect-data",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Observe the weather at the same time for five days with an adult. Design a record sheet with categories, then make a bar chart using your data.",
+      "evidence": "Five fixed-time weather observations, record sheet and chart; paper must be retained, as disclosed.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "collect-data:2",
+      "activityId": "collect-data",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Ask a small willing group to choose one of three proposed garden plants. Record anonymous votes, present them in a chart and explain why the result may not represent the whole school.",
+      "evidence": "Anonymous single-choice survey plus sampling limitation is a sound open task.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "frequency:0",
+      "activityId": "frequency",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "A tally record shows 5 + 5 + 3 marks for apples. What is the frequency?",
+      "evidence": "5+5+3=13. No actual tally drawing is shown.",
+      "answerKey": 13,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Show proper tally groups of five; 5+5+3 tests addition, not interpretation of tally notation.",
+      "issueId": "M-REP",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "frequency:1",
+      "activityId": "frequency",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "Book choices: adventure 8, animals 6, mystery 9. How many children chose animals or mystery?",
+      "evidence": "6+9=15; assumes one book choice per child.",
+      "answerKey": 15,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "State every child chose exactly one category; otherwise adding counts can double-count children.",
+      "issueId": "M-WORD",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "frequency:2",
+      "activityId": "frequency",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "Reading times are grouped: 0–9 minutes: 4 children; 10–19: 7; 20–29: 5. How many children read for at least 10 but less than 30 minutes?",
+      "evidence": "7+5=12 assuming times recorded in whole minutes; grouped information lacks individual values.",
+      "answerKey": 12,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Specify times rounded/recorded to whole minutes, or use 0≤t<10 etc. Current 0–9 and 10–19 notation leaves fractional readings ambiguous.",
+      "issueId": "M-WORD",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "data-tools:0",
+      "activityId": "data-tools",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "With an adult, enter this table into a spreadsheet: Oak 8, Ash 5, Birch 6. Give the columns clear headings. Save the sheet with a sensible title.",
+      "evidence": "Oak 8, Ash 5, Birch 6; headings and save reviewed in separate spreadsheet.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "data-tools:1",
+      "activityId": "data-tools",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "In the same spreadsheet, use a total formula for counts 8, 5 and 6. Sort the records by count, keeping names attached to their values.",
+      "evidence": "8+5+6=19; Oak 8 greatest; whole-record sorting correctly required.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "Embed the starting table again; direct entry to this level currently refers to the same spreadsheet without creating or displaying it.",
+      "issueId": "M-DEPEND",
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "data-tools:2",
+      "activityId": "data-tools",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Make a small plant table with columns Plant, Height in cm, Needs sun. Add five imaginary records. Filter for plants at least 20 cm high that need sun. Explain how a database query can use two conditions.",
+      "evidence": "Two conditions height≥20 AND needs sun; adult must inspect invented data and filter, rubric appropriate.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "averages:0",
+      "activityId": "averages",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Find the range of these scores: 3, 7, 4, 9.",
+      "evidence": "9−3=6.",
+      "answerKey": 6,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "averages:1",
+      "activityId": "averages",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Find the mean of 4, 6, 8.",
+      "evidence": "(4+6+8)/3=6.",
+      "answerKey": 6,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "averages:2",
+      "activityId": "averages",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "The mean of four counts is 8. Three counts are 6, 7 and 9. What is the missing count?",
+      "evidence": "4×8−(6+7+9)=10.",
+      "answerKey": 10,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "chance:0",
+      "activityId": "chance",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A bag contains only red counters. What is the chance of drawing a blue counter?",
+      "evidence": "No blue in all-red bag: impossible.",
+      "answerKey": "Impossible",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "chance:1",
+      "activityId": "chance",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "A bag has 4 blue and 4 yellow counters of the same size. One is drawn without looking. Drawing blue is…",
+      "evidence": "4/(4+4)=1/2 with fair selection: evens.",
+      "answerKey": "Evens",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "State counters are well mixed and equally likely to be drawn; same size and not looking do not alone ensure fair selection.",
+      "issueId": "M-WORD",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "chance:2",
+      "activityId": "chance",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "revision-recommended",
+      "prompt": "A bag has 6 red, 3 blue and 1 green equal-sized counters. Which colour order goes from least to most likely?",
+      "evidence": "1/10<3/10<6/10; red>1/2 but<1.",
+      "answerKey": "Green, blue, red",
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "State counters are well mixed and equally likely to be drawn.",
+      "issueId": "M-WORD",
+      "assessmentLimit": "One fixed item is insufficient evidence of secure mastery."
+    },
+    {
+      "taskId": "reasoning:0",
+      "activityId": "reasoning",
+      "level": 0,
+      "displayLevel": 1,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "You have 12 counters. Find different ways to split them into two groups. Record your pairs systematically and explain how you know none are missing.",
+      "evidence": "Unordered pairs 0+12 to 6+6:7; ordered 0+12 to 12+0:13; rubric accepts both with stated convention.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "reasoning:1",
+      "activityId": "reasoning",
+      "level": 1,
+      "displayLevel": 2,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "A club needs 18 seats. Tables seat either 4 or 6 people. Find two arrangements with enough seats. Compare your methods with a partner and say which uses fewer empty seats.",
+      "evidence": "3×6=18 exact; 2×6+2×4=20 gives 2 empty seats; other justified solutions accepted.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    },
+    {
+      "taskId": "reasoning:2",
+      "activityId": "reasoning",
+      "level": 2,
+      "displayLevel": 3,
+      "reviewer": "AI-assisted NI KS2 Maths review; human specialist validation pending",
+      "date": "2026-09-26",
+      "outcome": "content-check-pass; human-signoff-pending",
+      "prompt": "Investigate this claim: adding two odd whole numbers always gives an even number. Test examples, draw pairs of counters, and explain why examples alone do not prove “always”.",
+      "evidence": "(2 a+1)+(2 b+1)=2(a+b+1); two leftovers form a pair, valid general proof.",
+      "answerKey": null,
+      "reviewed": [
+        "prompt",
+        "hint",
+        "answer or adult rubric",
+        "explanation",
+        "distractors where supplied",
+        "diagram code where supplied"
+      ],
+      "requiredCorrection": "No task-specific mathematical correction identified. Expand equivalent practice and obtain human educational sign-off.",
+      "issueId": null,
+      "assessmentLimit": "Adult-supported open outcome; checklist is not evidence of mathematical quality."
+    }
+  ],
+  "curriculum": [
+    {
+      "id": "MP1",
+      "source": "maths",
+      "page": 1,
+      "topic": "Select resources",
+      "activities": [
+        "reasoning"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Resource selection limited to counters/representation and household investigations; add genuine resource choices."
+    },
+    {
+      "id": "MP2",
+      "source": "maths",
+      "page": 1,
+      "topic": "Find task information",
+      "activities": [
+        "reasoning",
+        "collect-data"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Most tasks supply needed facts; learner-chosen information sources weak."
+    },
+    {
+      "id": "MP3",
+      "source": "maths",
+      "page": 1,
+      "topic": "Work systematically",
+      "activities": [
+        "reasoning",
+        "budget"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Ordered number pairs and budget plans provide examples; repeat across contexts."
+    },
+    {
+      "id": "MP4",
+      "source": "maths",
+      "page": 1,
+      "topic": "Problem-solving strategies",
+      "activities": [
+        "reasoning",
+        "mental"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Reasoning and mental hints offer strategies; no systematic recovery sequence after errors."
+    },
+    {
+      "id": "MP5",
+      "source": "maths",
+      "page": 1,
+      "topic": "Mathematical language",
+      "activities": [
+        "reasoning",
+        "garden"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Some spoken reasoning; garden auto-check only numerical outcome, not mathematical explanation."
+    },
+    {
+      "id": "MP6",
+      "source": "maths",
+      "page": 1,
+      "topic": "Compare methods",
+      "activities": [
+        "reasoning"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Partner comparison appears in seating problem; limited repeated opportunities."
+    },
+    {
+      "id": "MP7",
+      "source": "maths",
+      "page": 1,
+      "topic": "Symbols and diagrams",
+      "activities": [
+        "coordinates",
+        "unknown",
+        "directions"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Coordinate, equation and turtle representations present; use across problem contexts."
+    },
+    {
+      "id": "MP8",
+      "source": "maths",
+      "page": 1,
+      "topic": "Present results",
+      "activities": [
+        "collect-data",
+        "data-tools"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Charts and spreadsheet outputs require external evidence, not retained in app."
+    },
+    {
+      "id": "MP9",
+      "source": "maths",
+      "page": 1,
+      "topic": "Patterns and predictions",
+      "activities": [
+        "sequences",
+        "machines"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Two numerical sequences and one devised rule; limited generalisation across spatial patterns."
+    },
+    {
+      "id": "MP10",
+      "source": "maths",
+      "page": 1,
+      "topic": "Explain open problems",
+      "activities": [
+        "reasoning"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Three open investigations; useful starter examples, adult-led quality judgement."
+    },
+    {
+      "id": "MP11",
+      "source": "maths",
+      "page": 1,
+      "topic": "Generalisations",
+      "activities": [
+        "reasoning",
+        "machines"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Odd+odd proof strong example; machines mostly evaluate rather than formulate general rules."
+    },
+    {
+      "id": "MP12",
+      "source": "maths",
+      "page": 1,
+      "topic": "Check reasonableness",
+      "activities": [
+        "estimate",
+        "reasoning"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Rounding and proof checks present; insufficient transfer to daily problems."
+    },
+    {
+      "id": "MN1",
+      "source": "maths",
+      "page": 1,
+      "topic": "Whole-number notation",
+      "activities": [
+        "place-value"
+      ],
+      "status": "gap within mapped topic",
+      "review": "GAP: no whole-number counting or whole-number reading/ordering tasks; one digit-value and partition task do not cover breadth."
+    },
+    {
+      "id": "MN2",
+      "source": "maths",
+      "page": 1,
+      "topic": "Decimal place value",
+      "activities": [
+        "decimal-scaling",
+        "place-value"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Decimal comparison/partition/scaling examples correct; only 3 scaling cases."
+    },
+    {
+      "id": "MN3",
+      "source": "maths",
+      "page": 1,
+      "topic": "Estimation",
+      "activities": [
+        "estimate"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Nearest-ten/hundred examples; no wider rounding/estimation sequence."
+    },
+    {
+      "id": "MN4",
+      "source": "maths",
+      "page": 1,
+      "topic": "Fraction equivalence",
+      "activities": [
+        "fractions",
+        "fraction-links"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Halves/quarters and 3/5 conversion sampled; broader fractional/decimal/percentage understanding and applications thin."
+    },
+    {
+      "id": "MN5",
+      "source": "maths",
+      "page": 1,
+      "topic": "Negative numbers",
+      "activities": [
+        "negative"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Temperature and floor contexts coherent; repeated practice absent."
+    },
+    {
+      "id": "MN6",
+      "source": "maths",
+      "page": 2,
+      "topic": "Sequences",
+      "activities": [
+        "sequences"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Add 4, double, devise alternating rules; limited range."
+    },
+    {
+      "id": "MN7",
+      "source": "maths",
+      "page": 2,
+      "topic": "Number properties",
+      "activities": [
+        "factors",
+        "tables"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Factors/prime/cube/square sampled; multiples and inverse relationships insufficiently explored."
+    },
+    {
+      "id": "MN8",
+      "source": "maths",
+      "page": 2,
+      "topic": "Function relationships",
+      "activities": [
+        "machines"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Forward/backward machines correct; spatial/practical relationship generalisation missing."
+    },
+    {
+      "id": "MN9",
+      "source": "maths",
+      "page": 2,
+      "topic": "Unknown quantities",
+      "activities": [
+        "unknown"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Three clear unknown equations; no misconception-based or equivalent follow-up items."
+    },
+    {
+      "id": "MN10",
+      "source": "maths",
+      "page": 2,
+      "topic": "Mental calculation",
+      "activities": [
+        "mental"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Compensation strategies sampled; no choice between multiple valid methods."
+    },
+    {
+      "id": "MN11",
+      "source": "maths",
+      "page": 2,
+      "topic": "Times tables",
+      "activities": [
+        "tables"
+      ],
+      "status": "gap within mapped topic",
+      "review": "GAP: only 4×5, 7×8, 90÷10; cannot substantiate coverage of all facts through 10×10."
+    },
+    {
+      "id": "MN12",
+      "source": "maths",
+      "page": 2,
+      "topic": "Operations and brackets",
+      "activities": [
+        "operations"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "One bracket calculation and two decimal examples; limited whole-number division/subtraction and written/mental method depth."
+    },
+    {
+      "id": "MN13",
+      "source": "maths",
+      "page": 2,
+      "topic": "Money calculations",
+      "activities": [
+        "shop"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Mapped shop tests multiplication/addition/subtraction, not division; add budget unit-price task to mapping and more money contexts."
+    },
+    {
+      "id": "MN14",
+      "source": "maths",
+      "page": 2,
+      "topic": "Budgeting and payments",
+      "activities": [
+        "budget"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Open budget/payment discussions appropriate; depends on adult support."
+    },
+    {
+      "id": "MN15",
+      "source": "maths",
+      "page": 2,
+      "topic": "Saving and value",
+      "activities": [
+        "budget"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Unit pricing and saving examples correct; repeated independent decisions absent."
+    },
+    {
+      "id": "MN16",
+      "source": "maths",
+      "page": 2,
+      "topic": "Foreign currency",
+      "activities": [
+        "currency"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Pound/euro examples appropriate; conversion is optional stretch, not full curriculum evidence."
+    },
+    {
+      "id": "MM1",
+      "source": "maths",
+      "page": 2,
+      "topic": "Estimate measures",
+      "activities": [
+        "measure-estimate"
+      ],
+      "status": "gap within mapped topic",
+      "review": "GAP: length/mass/capacity/time estimates prompted; no area estimate or actual temperature estimate."
+    },
+    {
+      "id": "MM2",
+      "source": "maths",
+      "page": 2,
+      "topic": "Measurement accuracy",
+      "activities": [
+        "measure-estimate"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Continuity/precision discussion present; needs hands-on varied resolutions."
+    },
+    {
+      "id": "MM3",
+      "source": "maths",
+      "page": 2,
+      "topic": "Metric conversions",
+      "activities": [
+        "units"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Three metric conversions and one subtraction only; no broad measurement operations practice."
+    },
+    {
+      "id": "MM4",
+      "source": "maths",
+      "page": 2,
+      "topic": "Perimeter, area, volume",
+      "activities": [
+        "garden",
+        "volume"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Rectangle perimeter/area and cuboid volume only; scaffold distinction and broader simple shapes."
+    },
+    {
+      "id": "MM5",
+      "source": "maths",
+      "page": 2,
+      "topic": "Scale",
+      "activities": [
+        "scale"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Two calculations and paper drawing coherent; diagram generic, not matched to each scale."
+    },
+    {
+      "id": "MM6",
+      "source": "maths",
+      "page": 2,
+      "topic": "Clocks and timetables",
+      "activities": [
+        "time"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "One half-hour clock, one conversion and one duration calculation; no genuine multi-entry timetable selection."
+    },
+    {
+      "id": "MS1",
+      "source": "maths",
+      "page": 3,
+      "topic": "2-D properties and patterns",
+      "activities": [
+        "shapes",
+        "symmetry"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Triangle/rectangle/pentagon, symmetry/tessellation/congruence sampled; broad construction/classification thin."
+    },
+    {
+      "id": "MS2",
+      "source": "maths",
+      "page": 3,
+      "topic": "3-D properties and nets",
+      "activities": [
+        "solids"
+      ],
+      "status": "gap within mapped topic",
+      "review": "GAP: only cubes/cuboids; other common 3-D shapes and their properties absent."
+    },
+    {
+      "id": "MS3",
+      "source": "maths",
+      "page": 3,
+      "topic": "Movement and coding",
+      "activities": [
+        "directions"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Eight-point visual and simple code present; anticlockwise/pattern generation lack assessed practice."
+    },
+    {
+      "id": "MS4",
+      "source": "maths",
+      "page": 3,
+      "topic": "Angles",
+      "activities": [
+        "angles"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "One acute recognition, one triangle calculation, one practical angles task; little line language or progressive protractor instruction."
+    },
+    {
+      "id": "MS5",
+      "source": "maths",
+      "page": 3,
+      "topic": "Coordinates",
+      "activities": [
+        "coordinates"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "First-quadrant plotting/translation adequate starter tasks; graphs are paper-based and generic diagram unrelated to later vertices."
+    },
+    {
+      "id": "MD1",
+      "source": "maths",
+      "page": 3,
+      "topic": "Collect and present",
+      "activities": [
+        "collect-data"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Three purposeful collection tasks; representations and sustained data practice depend on external work."
+    },
+    {
+      "id": "MD2",
+      "source": "maths",
+      "page": 3,
+      "topic": "Explain conclusions",
+      "activities": [
+        "data",
+        "collect-data"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Open investigations prompt conclusions; closed data answers alone do not show explanation."
+    },
+    {
+      "id": "MD3",
+      "source": "maths",
+      "page": 3,
+      "topic": "Tables and graphs",
+      "activities": [
+        "frequency",
+        "data"
+      ],
+      "status": "gap within mapped topic",
+      "review": "GAP: proportional bars and prose counts only; no broad graph/table range or creation of grouped frequency tables."
+    },
+    {
+      "id": "MD4",
+      "source": "maths",
+      "page": 3,
+      "topic": "Data sheets and tools",
+      "activities": [
+        "collect-data",
+        "data-tools"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Record sheet and spreadsheet/filter tasks present; separate software and prior-level dependency impede independent use."
+    },
+    {
+      "id": "MD5",
+      "source": "maths",
+      "page": 3,
+      "topic": "Mean and range",
+      "activities": [
+        "averages",
+        "data"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Mean/range calculations correct; interpretation of typicality and outliers absent."
+    },
+    {
+      "id": "MD6",
+      "source": "maths",
+      "page": 3,
+      "topic": "Chance vocabulary",
+      "activities": [
+        "chance"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Basic vocabulary covered in 3 bag contexts; no transfer or experimental exploration."
+    },
+    {
+      "id": "MD7",
+      "source": "maths",
+      "page": 3,
+      "topic": "Possible outcomes",
+      "activities": [
+        "chance"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Simple bag outcomes described; no learner-generated outcome lists or trials."
+    },
+    {
+      "id": "MD8",
+      "source": "maths",
+      "page": 3,
+      "topic": "Likelihood comparisons",
+      "activities": [
+        "chance"
+      ],
+      "status": "partial; introductory activity present",
+      "review": "Ordering and evens present; add direct less-than/greater-than-even comparisons and fair experimental contexts."
+    }
+  ]
+}

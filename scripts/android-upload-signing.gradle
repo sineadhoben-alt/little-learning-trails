@@ -1,0 +1,18 @@
+// Local upload signing. Password stays in an ignored, owner-only file.
+allprojects { project ->
+    project.afterEvaluate {
+        if (project.plugins.hasPlugin('com.android.application')) {
+            def root = new File(project.rootDir, '..').canonicalFile
+            def secretFile = new File(root, '.local-signing/upload-password')
+            def keyFile = new File(root, '.local-signing/learning-trails-upload.p12')
+            if (!secretFile.exists() || !keyFile.exists()) throw new GradleException('Upload signing files are missing')
+            def upload = project.android.signingConfigs.create('learningTrailsUpload')
+            upload.storeFile = keyFile
+            upload.storePassword = secretFile.text.trim()
+            upload.keyAlias = 'learning-trails-upload'
+            upload.keyPassword = secretFile.text.trim()
+            project.android.buildTypes.release.signingConfig = upload
+            project.android.defaultConfig.versionCode = 3
+        }
+    }
+}

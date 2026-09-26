@@ -1,0 +1,33 @@
+{
+  "name": "transfer-trainer-mobile",
+  "version": "0.2.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "web": "node --dns-result-order=ipv4first node_modules/expo/bin/cli start --web --port 8085 --localhost",
+    "ios": "node --dns-result-order=ipv4first node_modules/expo/bin/cli start --ios --port 8085 --localhost",
+    "android": "node --dns-result-order=ipv4first node_modules/expo/bin/cli start --android --port 8085 --localhost",
+    "coverage": "node --experimental-strip-types scripts/coverage.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "export": "expo export --platform all"
+  },
+  "dependencies": {
+    "@noble/hashes": "1.8.0",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.25",
+    "expo-speech": "~57.0.3",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-svg": "15.15.4",
+    "react-native-web": "^0.21.2"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~6.0.3"
+  }
+}

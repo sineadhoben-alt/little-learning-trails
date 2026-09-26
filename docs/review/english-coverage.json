@@ -1,0 +1,382 @@
+[
+  {
+    "id": "EL1",
+    "activities": [
+      "listen-texts"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Short scripts and one poem; no delivered digital audio/drama bank.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL2",
+    "activities": [
+      "talk",
+      "retell-drama"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Retelling tasks present; repeated performance across text/context range absent.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL3",
+    "activities": [
+      "discussion"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Pair/group prompts present; actual class/curricular breadth depends on adults.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL4",
+    "activities": [
+      "discussion"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Turn taking and invitation explicit; anchored observation criteria absent.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL5",
+    "activities": [
+      "discussion",
+      "talk"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Reasons and fair summary present; weak progression evidence across contexts.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL6",
+    "activities": [
+      "instructions",
+      "talk"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Useful information-gap work; instructions:0 ambiguous and instructions:2 missing shared grid.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL7",
+    "activities": [
+      "retell-drama"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Two short role-play ideas do not supply a sustained range of drama experiences.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL8",
+    "activities": [
+      "retell-drama"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Improvisation explicitly prompted; scaffolds and participation evidence absent.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL9",
+    "activities": [
+      "retell-drama"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Journey and character settings present; breadth of descriptive practice limited.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL10",
+    "activities": [
+      "presentations"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Talk/chart/slides progression present; external audience/tools required.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL11",
+    "activities": [
+      "questions"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Question/follow-up/open-question tasks present; no modelled question refinement.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL12",
+    "activities": [
+      "questions"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Librarian/friend role-play present; narrow contextual practice.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL13",
+    "activities": [
+      "voice",
+      "presentations"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Voice/audience prompts present; communication adaptations need strengthening.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL14",
+    "activities": [
+      "voice"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Expressive reading examples present; no audio modelling or observation record.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EL15",
+    "activities": [
+      "voice"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Register/dialect values diversity; a single comparison is insufficient breadth.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER1",
+    "activities": [
+      "reading-habits"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Paired/shared reading present; modelled phrasing is only adult guidance, guided reading not delivered.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER2",
+    "activities": [
+      "reading-library"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Three very short genres present; no broad text library or substantial digital reading.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER3",
+    "activities": [
+      "reading-habits"
+    ],
+    "status": "Partial coverage",
+    "evidence": "External reading suggested; short in-app excerpts cannot support sustained programme.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER4",
+    "activities": [
+      "reading-habits"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Preference and comparison prompted; book availability and range external.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER5",
+    "activities": [
+      "source-detective"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Source labels/count judgment plus external enquiry; no usable comparison source set.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER6",
+    "activities": [
+      "reading-response"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Visual/pose/text responses present; source navigation and alternative formats needed.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER7",
+    "activities": [
+      "media",
+      "reading-library"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Device identification/headline effects present; extended interpretation/discussion sparse.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER8",
+    "activities": [
+      "media"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Text snippets represent report/poster; little actual media variety.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER9",
+    "activities": [
+      "detective"
+    ],
+    "status": "Partial coverage",
+    "evidence": "MC recognition of inference only; child rarely supplies textual justification.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER10",
+    "activities": [
+      "detective"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Detective:2 recognises Orla’s changed interpretation; child does not record/revise own response.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER11",
+    "activities": [
+      "voice"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Prepared and own writing read-aloud explicitly included; practice/feedback external.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER12",
+    "activities": [
+      "word-strategies"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Two easy meaning questions then adult-selected word; systematic cross-check practice absent.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "ER13",
+    "activities": [
+      "reading-purpose"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Strategies named in MC; no supplied timetable/article for performing them.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW1",
+    "activities": [
+      "story",
+      "factual-writing"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Independent onscreen writing present; explicit modelled/shared/guided composition sequence missing.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW2",
+    "activities": [
+      "layout"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Layout tasks present but plain text field limited; layout:1 source paragraph missing.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW3",
+    "activities": [
+      "poetry"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Rhyme/rhythm/wordplay prompts present; models and revisiting limited.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW4",
+    "activities": [
+      "factual-writing",
+      "layout"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Several audiences/genres present; taught exemplars and sustained writing progression absent.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW5",
+    "activities": [
+      "story",
+      "writers-style"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Revision prompted; draft versions and before/after evidence not retained.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW6",
+    "activities": [
+      "story",
+      "factual-writing"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Imaginary story, factual report and opinion letter present; breadth/development not demonstrated.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW7",
+    "activities": [
+      "writers-style"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Mood contrast and word choice present; exemplars/rubric needed.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW8",
+    "activities": [
+      "writers-style"
+    ],
+    "status": "Partial coverage",
+    "evidence": "One free scene asks intentional choices; portfolio needed before personal-style claim.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW9",
+    "activities": [
+      "digital-composition"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Most output external; caption on paper is only preparatory digital composition.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW10",
+    "activities": [
+      "spoken-written"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Context and explicit reference well prompted; model comparison useful.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW11",
+    "activities": [
+      "spelling",
+      "words"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Three spelling recognitions plus external self-selection cannot establish varied spelling competence.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW12",
+    "activities": [
+      "grammar",
+      "words"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Very small grammar bank lacks sustained varied composition/editing and concept progression.",
+    "humanSignoff": "Pending"
+  },
+  {
+    "id": "EW13",
+    "activities": [
+      "handwriting"
+    ],
+    "status": "Partial coverage",
+    "evidence": "Paper practice appropriately acknowledged; fluency progression and specialist observation not supplied.",
+    "humanSignoff": "Pending"
+  }
+]

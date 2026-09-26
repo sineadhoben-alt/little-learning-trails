@@ -1,0 +1,10 @@
+import {activities} from '../src/content.ts';
+import {learning,practice} from '../src/learning.ts';
+import {projects} from '../src/projects.ts';
+import {coverage} from '../src/coverage.ts';
+import {readingLibrary} from '../src/englishProjects.ts';
+import {writeFileSync} from 'node:fs';
+const lines=['# Implementation map after the review','', '26 September 2026 · AI-authored additions and software checks. This records implemented provision, not full curriculum coverage or qualified educational approval. The original review remains in CURRICULUM-MATRIX.md.','',`Provision: ${activities.length} trails; ${Object.keys(learning).length*3} modelled steps; ${Object.values(practice).reduce((n,ts)=>n+ts.length,0)} additional practice variants; ${Object.keys(projects).length} guided projects; ${readingLibrary.length} original sustained reading texts.`, '', 'Every project supplies a goal, materials, teaching sequence, worked model, saved evidence prompts and anchored adult feedback. Project feedback is informal and does not certify mastery. See subject-specific action trackers for exact next-action details and limits.','', '| Original row | Concrete added project | Saved evidence and tool | Review state |','|---|---|---|---|'];
+for(const row of coverage){const p=projects[row.id];lines.push(`| ${row.id} · ${row.topic} | ${p.title} | ${p.evidence.join('; ')}. Tool: ${p.tool||'notes and versions'}. | Implemented; qualified review and observed use pending |`);}
+lines.push('','## Human work still open','','Qualified NI KS2 subject leads must verify their relevant experience privately with the owner, review every changed task/project, confirm progression and content, and approve the exact candidate. AI review is not their substitute. The owner’s proposed Android community/online parent route and limited iOS group remain planned. Consent, sessions, results and final release decisions must be actually completed before being recorded as done.','');
+writeFileSync('docs/review/NEXT-ACTIONS-IMPLEMENTATION.md',lines.join('\n'));
