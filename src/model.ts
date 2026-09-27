@@ -1,3 +1,5 @@
+import {tasksForStep} from './learning.ts';
+import {markMaths} from './mathsCheck.ts';
 import {projects} from './projects.ts';
 import {coverage} from './coverage.ts';
 import type {ProjectDraft} from './ProjectWorkspace';
@@ -30,10 +32,12 @@ export function suggestedLevel(state:State,id:string):Level {
  const ready=evidence.length===3&&evidence.every(r=>r.attempts===1&&!r.assisted);
  return Math.min(2,recent.level+(ready?1:0)) as Level;
 }
+const mathsContexts=new Map<Task,{id:string;level:Level}>();
+for(const a of activities.filter(a=>a.subject==='Maths'))for(const level of [0,1,2] as Level[])for(const task of tasksForStep(a.id,level))mathsContexts.set(task,{id:a.id,level});
 export function checkAnswer(kind:string,task:Task,d:Draft):boolean {
- if(kind==='shop' && !task.items?.every((v,i)=>(d.counts[i]||0)===v.quantity))return false;
- if(kind==='garden' && (d.width!==task.width||d.height!==task.height))return false;
- if(kind==='fractions' && d.tiles.length!==Number(task.answer))return false;
+ const context=mathsContexts.get(task);
+ if(context)return markMaths(context.id,context.level,task,d).status==='correct';
+ if(['shop','garden','fractions','data'].includes(kind))return false;
  if(kind==='words' && task.words)return d.words.map(i=>task.words![i]).join(' ')===task.answer;
  if(typeof task.answer==='number')return /^\d+(\.\d{1,2})?$/.test(d.answer.trim()) && Math.abs(Number(d.answer)-task.answer)<0.00001;
  return d.answer===task.answer;
