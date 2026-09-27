@@ -1,4 +1,5 @@
 import {markMaths} from './mathsCheck';
+import {markEnglish} from './englishCheck';
 import appConfig from '../app.json';
 import ProjectWorkspace from './ProjectWorkspace';
 import {projects} from './projects';
@@ -16,7 +17,7 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { activities, levels, planned, sources, type Activity, type Level } from './content';
-import { fresh, blankDraft, checkAnswer, suggestedLevel, keyFor, changeBasketCount, safeURL, type State, type Draft } from './model';
+import { fresh, blankDraft, suggestedLevel, keyFor, changeBasketCount, safeURL, type State, type Draft } from './model';
 const C={ink:'#203E36',muted:'#53665E',green:'#244E40',cream:'#F8F7F1',line:'#DADFD5',orange:'#F6BF77',white:'#FFFFFF'};
 type Screen='home'|'Maths'|'English'|'progress'|'parents'|'activity'|'projects'|'project';
 function Button({label,onPress,secondary=false,disabled=false,small=false}: {label:string;onPress:()=>void;secondary?:boolean;disabled?:boolean;small?:boolean}){return <Pressable accessibilityRole="button" accessibilityLabel={label} accessibilityState={{disabled}} disabled={disabled} onPress={onPress} style={({pressed})=>[s.button,secondary&&s.secondary,small&&{paddingVertical:11,paddingHorizontal:16},disabled&&{opacity:.5},pressed&&{opacity:.8}]}><Text style={[s.buttonText,secondary&&{color:C.ink}]}>{label}</Text></Pressable>}
@@ -47,8 +48,9 @@ function AppInner(){
  const rate=(rating:'support'|'developing'|'secure')=>{if(!adultUnlocked){setGate('review');return;}setState(prev=>{const existing=prev.results[key];if(!existing)return prev;const result={...existing,adultRating:rating,at:new Date().toISOString()};return {...prev,results:{...prev.results,[key]:result},history:[...(prev.history||[]),result].slice(-5000)};});setAdultUnlocked(false);};
  const nextPractice=()=>setState(prev=>({...prev,drafts:{...prev.drafts,[key]:{...blankDraft(),practiceIndex:(practiceIndex+1)%bank.length}},last:key}));
  const check=()=>{
-  if(activity.subject==='Maths'){const mark=markMaths(active,level,task,draft);if(mark.status==='correct')complete('checked',draft.tries+1);else changeDraft({tries:draft.tries+(mark.status==='incorrect'?1:0),feedback:mark.feedback});return;}
-  const tries=draft.tries+1;if(checkAnswer(activity.kind,task,draft))complete('checked',tries);else changeDraft({tries,feedback:'Not quite yet. Take another look, or open a hint. You can try again.'});
+  const mark=activity.subject==='Maths'?markMaths(active,level,task,draft):markEnglish(active,level,task,draft);
+  if(mark.status==='correct')complete('checked',draft.tries+1);
+  else changeDraft({tries:draft.tries+(mark.status==='incorrect'?1:0),feedback:mark.feedback});
  };
  const count=Object.keys(state.results).length; const total=activities.reduce((n,a)=>n+a.tasks.length,0);
  const openLink=async(url:string)=>{if(!adultUnlocked){setGate('parents');return;}setLinkError('');try{await Linking.openURL(url);}catch{setLinkError('That link could not be opened on this device.');}};

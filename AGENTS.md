@@ -1,0 +1,13 @@
+# Mandatory learning and grading integrity rule
+
+Owner instruction, 27 September 2026. This is a release-blocking requirement for **every edit** to this app, including content, generated banks, UI, persistence, diagrams, marking and packaging. Read `docs/GRADING-INTEGRITY.md` before changing anything. Never weaken the checks to make a build pass.
+
+- Every automatically marked question must have exactly one justified correct result under its explicit wording and supplied evidence. Multiple equivalent representations of that result are valid; do not confuse a single result with a single string, tile order or rectangle orientation.
+- Apply all relevant mathematical rules, including brackets, powers, multiplication/division left-to-right, addition/subtraction left-to-right, units, signs, fractions, rounding and explicit sequential instructions. An implementation's processing order must never change mathematical meaning.
+- Independently derive and double-check every automatic answer. Do not copy a key into a second key and call that verification. For English, use the passage or a stated linguistic convention and document why each distractor is invalid. Re-check every permutation where interaction/option order might affect marking.
+- Ambiguity, missing evidence, multiple defensible answers, inconsistent hints/diagrams/keys, unsupported input or disagreement between checks must fail safely. Never mark the child wrong or lower their suggested level because the app cannot grade safely.
+- Creative writing, discussion, interpretations and investigations with multiple valid responses are explicitly adult-reviewed. They must not be presented as single-answer automatic questions or scored as such.
+- Preserve saved work and stable practice IDs. Never wipe records to fix a grader. Do not silently rewrite historic assessment evidence without sufficient evidence.
+- After every edit, run `npm run verify:integrity` using the available project runtime. Before packaging, run the same gate and the appropriate native build checks. If unavailable or failing, report the limitation and do not call the candidate verified or release-ready.
+- Content changes invalidate prior review of the changed item. Record the exact item, issue, reasoning, regression evidence and remaining human-review state. A frozen-input register may only be updated after the corresponding independent rule and ambiguity review; never regenerate it blindly to silence failures.
+- No public release with an unresolved grading blocker. AI and automated checks do not replace qualified Maths/English reviewers or physical-device checks, and must never be described as a guarantee of zero mistakes.

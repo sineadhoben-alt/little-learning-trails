@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "build": 6,
+  "sourceCommit": "39b5a86",
+  "testsPassed": 40,
+  "closedMathsQuestionsIndependentlyChecked": 640,
+  "iosUpload": "xcodebuild exportArchive succeeded; TestFlight processing/group attachment pending",
+  "android": "Build in progress; must rerun bundle after final orientation fix before upload",
+  "physicalDeviceRetest": "Pending",
+  "releaseDecision": "HOLD: supervised beta only; human educational and device review pending"
+}

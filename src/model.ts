@@ -1,5 +1,6 @@
 import {tasksForStep} from './learning.ts';
 import {markMaths} from './mathsCheck.ts';
+import {markEnglish} from './englishCheck.ts';
 import {projects} from './projects.ts';
 import {coverage} from './coverage.ts';
 import type {ProjectDraft} from './ProjectWorkspace';
@@ -32,15 +33,13 @@ export function suggestedLevel(state:State,id:string):Level {
  const ready=evidence.length===3&&evidence.every(r=>r.attempts===1&&!r.assisted);
  return Math.min(2,recent.level+(ready?1:0)) as Level;
 }
-const mathsContexts=new Map<Task,{id:string;level:Level}>();
-for(const a of activities.filter(a=>a.subject==='Maths'))for(const level of [0,1,2] as Level[])for(const task of tasksForStep(a.id,level))mathsContexts.set(task,{id:a.id,level});
-export function checkAnswer(kind:string,task:Task,d:Draft):boolean {
- const context=mathsContexts.get(task);
- if(context)return markMaths(context.id,context.level,task,d).status==='correct';
- if(['shop','garden','fractions','data'].includes(kind))return false;
- if(kind==='words' && task.words)return d.words.map(i=>task.words![i]).join(' ')===task.answer;
- if(typeof task.answer==='number')return /^\d+(\.\d{1,2})?$/.test(d.answer.trim()) && Math.abs(Number(d.answer)-task.answer)<0.00001;
- return d.answer===task.answer;
+const taskContexts=new Map<Task,{id:string;level:Level;subject:string}>();
+for(const a of activities)for(const level of [0,1,2] as Level[])for(const task of tasksForStep(a.id,level))taskContexts.set(task,{id:a.id,level,subject:a.subject});
+export function checkAnswer(_kind:string,task:Task,d:Draft):boolean {
+ const context=taskContexts.get(task);
+ if(!context||task.answer===undefined)return false;
+ const mark=context.subject==='Maths'?markMaths(context.id,context.level,task,d):markEnglish(context.id,context.level,task,d);
+ return mark.status==='correct';
 }
 export const safeURL=(url:string)=> {try{const u=new URL(url);return u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.includes('.');}catch{return false;}};
 export function parseState(raw:string):State {

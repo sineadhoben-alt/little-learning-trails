@@ -11,7 +11,9 @@
     "coverage": "node --experimental-strip-types scripts/coverage.mjs",
     "typecheck": "tsc --noEmit",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
-    "export": "expo export --platform all"
+    "export": "expo export --platform all",
+    "verify:integrity": "node scripts/verify-integrity.mjs",
+    "preexport": "node scripts/verify-integrity.mjs"
   },
   "dependencies": {
     "@noble/hashes": "1.8.0",

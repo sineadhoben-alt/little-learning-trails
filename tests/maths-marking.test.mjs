@@ -82,3 +82,15 @@ test('Exact owner report: 2 by 4 garden, one quarter pond, 6 m² remains in eith
 test('All garden questions accept a rotated rectangle with the same dimensions',()=>{
  for(const {id,level,t} of cases.filter(v=>v.id==='garden'))assert.equal(markMaths(id,level,t,{...draft(t),width:t.height,height:t.width}).status,'correct');
 });
+test('Every maths option is checked, with unchanged results when the offered order is reversed',()=>{
+ for(const {id,level,t} of cases.filter(v=>v.t.options))for(const answer of t.options){const r=markMaths(id,level,{...t,options:[...t.options].reverse()},{...draft(t),answer});assert.equal(r.status,answer===t.answer?'correct':'incorrect',`${id}: ${answer}`);}
+});
+test('Sequential and precedence-sensitive questions reject common reordering mistakes',()=>{
+ const cases=[['operations',0,10],['operations',2,2.3125],['machines',1,18],['machines',2,17/3],['unknown',2,26/3-5],['factors',2,1]];
+ for(const [id,level,wrong] of cases){const t=tasksForStep(id,level)[0];assert.notEqual(wrong,t.answer);assert.equal(markMaths(id,level,t,{...blankDraft(),answer:String(wrong)}).status,'incorrect',id);}
+});
+test('A near-but-unequal decimal can never be accepted by a numeric tolerance',()=>{
+ const t=tasksForStep('garden',0)[0];
+ for(const answer of ['6.000000001','5.999999999','6.00000000000000001','6000000000000000001'])assert.notEqual(markMaths('garden',0,t,{...draft(t),answer}).status,'correct');
+ assert.equal(markMaths('garden',0,{...t,answer:6.000000001},draft(t)).status,'grader-error');
+});

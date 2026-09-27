@@ -2,12 +2,12 @@ import type {Task,Level} from './content';
 import type {Draft} from './model';
 import checkedQuestions from './mathsQuestionSignatures.ts';
 const checked=new Set(checkedQuestions);
-export const mathsQuestionSignature=(id:string,level:Level,t:Task)=>JSON.stringify([id,level,t.prompt,t.hint,t.explanation,t.options,t.width,t.height,t.items,t.budget,t.total,t.parts,t.bars]);
+export const mathsQuestionSignature=(id:string,level:Level,t:Task)=>JSON.stringify([id,level,t.prompt,t.hint,t.explanation,t.options?[...t.options].sort():undefined,t.width,t.height,t.items,t.budget,t.total,t.parts,t.bars]);
 
 const sum=(xs:number[])=>xs.reduce((a,b)=>a+b,0);
 const numbers=(s:string)=>(s.replace(/(\d),(?=\d{3}(?:\D|$))/g,'$1').match(/\d+(?:\.\d+)?/g)||[]).map(Number);
 const close=(a:number,b:number)=>Number.isFinite(a)&&Number.isFinite(b)&&Math.abs(a-b)<1e-8;
-const equal=(a:unknown,b:unknown)=>typeof a==='number'&&typeof b==='number'?close(a,b):a===b;
+const equal=(a:unknown,b:unknown)=>a===b;
 const unique=(options:string[]|undefined,predicate:(s:string)=>boolean)=>{const matches=options?.filter(predicate)||[];return matches.length===1?matches[0]:undefined;};
 const prime=(n:number)=>n>=2&&Number.isInteger(n)&&!Array.from({length:Math.max(0,Math.floor(Math.sqrt(n))-1)},(_,i)=>i+2).some(d=>n%d===0);
 
@@ -59,12 +59,19 @@ export function deriveMathsAnswer(id:string,level:Level,t:Task):number|string|un
 export function numericResponse(value:string):number|undefined {
  const v=value.trim().replace(/−/g,'-');
  if(!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(v))return;
- const n=Number(v);return Number.isFinite(n)?n:undefined;
+ const n=Number(v);
+ const canonical=(s:string)=>{const negative=s.startsWith('-');const [whole,fraction='']=s.replace(/^[+-]/,'').split('.');const w=whole.replace(/^0+/, '')||'0',f=fraction.replace(/0+$/,'');const result=w+(f?'.'+f:'');return negative&&result!=='0'?'-'+result:result;};
+ // Never silently round a learner's long decimal or oversized integer.
+ return Number.isFinite(n)&&canonical(v)===canonical(String(n))?n:undefined;
 }
 export type MathsMark={status:'correct'|'incorrect'|'incomplete'|'grader-error';feedback:string};
 export function markMaths(id:string,level:Level,t:Task,d:Draft):MathsMark {
  const known=checked.has(mathsQuestionSignature(id,level,t));
- const derived=known?deriveMathsAnswer(id,level,t):undefined;
+ const computed=known?deriveMathsAnswer(id,level,t):undefined;
+ // All frozen numeric items have an exact result in whole units or hundredths.
+ // Remove binary arithmetic noise only from our calculation, never the response.
+ const rounded=typeof computed==='number'?Math.round(computed*100)/100:computed;
+ const derived=typeof computed==='number'&&Math.abs(computed-Number(rounded))>1e-9?undefined:rounded;
  if(derived===undefined||!equal(derived,t.answer))return {status:'grader-error',feedback:'Our answer checks disagree, so this question cannot be marked safely. This is an app problem, not your mistake. Your work is saved; ask a grown-up to report this question. It will not count as an unsuccessful attempt.'};
  const response=typeof derived==='number'?numericResponse(d.answer):d.answer;
  if(response===undefined||d.answer.trim()==='')return {status:'incomplete',feedback:typeof derived==='number'?'Enter your answer as a number, for example 8 or 8.0. This does not count as an unsuccessful attempt.':'Choose an answer first.'};
