@@ -111,3 +111,7 @@ Apple's public build-5 submission is Rejected under guideline 2.1 with Kids Cate
 ### Build 8 owner approval completed
 
 Owner explicitly approved build 8. Apple showed compliance already cleared (Ready to Submit) when reopened. Attached only Owner beta checks, verified one internal tester, and saved accurate What to Test notes; Apple displayed Saved. No external group/public submission added. Native device interaction, human reviews and public launch remain pending. The Kids Category reply is still an unsent draft.
+
+## Build 8 startup blocker / build 9 repair in progress
+
+Owner reports TestFlight 0.2.0 (8) opens to a blank white screen on both iPhone and iPad. The actual build-8 archive omitted the existing scene-lifecycle configuration. Build 8's successful upload and group attachment did not prove startup. Treat build 8 as affected. Build 9 restores the native scene/factory integration and adds actual generated/packaged startup checks; 55 tests pass. Standalone launch verification and the replacement upload are still pending. No saved records have been erased. See ../review/IOS-STARTUP-2026-10-01.md.

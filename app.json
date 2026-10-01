@@ -8,7 +8,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.transfertrainerni.learning.preview",
-      "buildNumber": "8"
+      "buildNumber": "9"
     },
     "android": {
       "package": "com.transfertrainerni.learning.preview",
