@@ -107,3 +107,7 @@ iOS build 7 exposed stale native version 0.1.0 and was not assigned to testers. 
 Google internal build 8 is Active and Available to internal testers, owner-only list (one person), released 1 October 15:45. Closed/public tracks unchanged. Android standalone emulator update preserved and resumed the existing reading activity; additional native interaction/lifecycle tests were interrupted by the Mac locking. Store-signed files retain the established upload signature; a separate development-signed emulator copy avoided uninstalling the existing app.
 
 Apple's public build-5 submission is Rejected under guideline 2.1 with Kids Category questions. A reply is drafted, not sent; owner message authorisation pending. Human reviews have not yet occurred, as confirmed by owner today. Physical-device/accessibility checks and final sign-off remain pending. Public launch remains HOLD. See ../review/REMAINING-CHECKS-2026-10-01.md.
+
+### Build 8 owner approval completed
+
+Owner explicitly approved build 8. Apple showed compliance already cleared (Ready to Submit) when reopened. Attached only Owner beta checks, verified one internal tester, and saved accurate What to Test notes; Apple displayed Saved. No external group/public submission added. Native device interaction, human reviews and public launch remain pending. The Kids Category reply is still an unsent draft.

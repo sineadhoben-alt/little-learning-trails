@@ -38,6 +38,12 @@ Apple's public build-5 submission is Rejected, with Kids Category information re
 
 ## Release hold and evidence limits
 
-Still required: final Apple build-8 processing/group verification; actual installed-build lifecycle, offline, keyboard, diagram, large-text and VoiceOver/TalkBack checks on intended iOS/Android devices; qualified Maths and English per-item approvals and rubric review; supervised P5–P7/parent evaluation; final owner release permission and exact candidate sign-off. Anonymous reviewer codes are acceptable, with relevant expertise verified privately by the owner. The earlier build-2 candidate register is historical and must not be represented as build-8 approval.
+Still required: actual installed-build lifecycle, offline, keyboard, diagram, large-text and VoiceOver/TalkBack checks on intended iOS/Android devices; qualified Maths and English per-item approvals and rubric review; supervised P5–P7/parent evaluation; final owner release permission and exact candidate sign-off. Anonymous reviewer codes are acceptable, with relevant expertise verified privately by the owner. The earlier build-2 candidate register is historical and must not be represented as build-8 approval.
 
 Evidence: `evidence-2026-10-01/` contains browser screenshots, the integrity log and source SHA-256 values. These document the specific checks above; they are not proof of unperformed checks.
+
+## Owner approval follow-up — 1 October
+
+The owner explicitly approved build 8. On reopening App Store Connect, the declaration had already cleared: build 0.2.0 (8) showed Ready to Submit with no Missing Compliance control. Added the existing internal Owner beta checks group and verified exactly one tester. Saved build-specific What to Test notes, including the 6 m² pond, rotated drawings, English marking, saved-work recovery, fraction order and VoiceOver. Apple confirmed Saved. No external group was added and no public release was submitted. Local evidence: evidence-2026-10-01/apple8-owner.jpg. This completes processing/compliance/group verification; Ready to Submit is Apple's displayed status, not an external beta approval.
+
+The Android emulator is visible again. Automated taps still fail because computer-use cannot locate the window at the requested screen position, even after reconnecting and raising the window. No successful native answer-marking/lifecycle result is claimed; these and physical-device checks remain pending. The Kids Category reply remains an unsent draft awaiting explicit message authorisation.
