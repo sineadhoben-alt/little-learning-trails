@@ -1,0 +1,13 @@
+Draft only — not sent to Apple.
+
+Thank you. Regarding the Kids Category questions for Little Learning Trails, version 0.2.0:
+
+1. Third-party analytics: The app does not integrate an analytics service or transmit learning events to an analytics provider.
+
+2. Third-party advertising: The app does not include third-party advertising or an advertising network SDK. The parent area contains a link to our separate Transfer Trainer NI app; it is behind the local parent PIN and opens only when an adult taps it.
+
+3. Data sharing: The app has no developer-operated backend, child account, cross-device sync or app-managed cloud storage. It does not upload or share children's nicknames, answers, writing, progress or adult feedback with third parties. Parent-gated links open external CCEA, privacy/support and App Store pages only when tapped. Those destinations handle their own ordinary web requests; the app does not append children's learning data to the links. Operating-system backups may include local app data according to the device owner's settings.
+
+4. Other user/device data: Optional nickname, school-year preference, drafts, answers, progress, reflections and adult review records are stored locally to restore work and suggest practice within each topic. A SHA-256 value of the local parent PIN is stored to check access to adult controls; the raw PIN is not stored. No child email address or sign-in is required. Read-aloud uses the operating system's text-to-speech facility; we do not operate a speech-upload service. The app does not request camera, microphone or location access for its learning activities.
+
+The app is currently being evaluated through owner-only beta testing. We are not requesting public release while educational review and supervised family/device evaluation remain outstanding.

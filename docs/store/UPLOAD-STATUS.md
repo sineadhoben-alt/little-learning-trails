@@ -97,3 +97,13 @@ Internal test list also changed from Transfer Trainer Testers to the owner-only 
 ## 27 September — maths grading fix / build 6
 
 Owner clarified garden:2:1, a 2 m by 4 m rectangle with one quarter as a pond: 6 m² remaining. Fixed rejection of rotated rectangles and added independent calculations for all 640 closed maths questions. All 40 tests and strict type check pass. Exact rotated pond case verified in browser; physical iOS retest pending. Source commit 39b5a86 pushed. iOS archive and upload succeeded (nonblocking Hermes symbol-upload warning); processing, compliance and owner-group attachment not yet verified. Android build in progress and final orientation change requires a fresh bundle before upload. Existing records preserved. Public launch remains HOLD.
+
+## 1 October — remaining checks / build 8
+
+52 integrity tests and strict TypeScript passed. Fixed missing checked/selected accessibility states. Browser retested the exact rotated 6 m² pond item, incomplete construction, English punctuation choices, saved-answer recovery, fraction selection order and enlarged diagrams. No family records were cleared.
+
+iOS build 7 exposed stale native version 0.1.0 and was not assigned to testers. Corrected native/app metadata to 0.2.0 (8); added native-version preflight and regressions. Build 8 archive metadata independently verified and upload succeeded. Missing framework dSYM warnings remain a crash-diagnostics limitation. Apple visibly shows 0.2.0 (8) Processing; compliance and owner-group attachment are pending. Build 6 compliance and owner group (one tester) were confirmed earlier today.
+
+Google internal build 8 is Active and Available to internal testers, owner-only list (one person), released 1 October 15:45. Closed/public tracks unchanged. Android standalone emulator update preserved and resumed the existing reading activity; additional native interaction/lifecycle tests were interrupted by the Mac locking. Store-signed files retain the established upload signature; a separate development-signed emulator copy avoided uninstalling the existing app.
+
+Apple's public build-5 submission is Rejected under guideline 2.1 with Kids Category questions. A reply is drafted, not sent; owner message authorisation pending. Human reviews have not yet occurred, as confirmed by owner today. Physical-device/accessibility checks and final sign-off remain pending. Public launch remains HOLD. See ../review/REMAINING-CHECKS-2026-10-01.md.

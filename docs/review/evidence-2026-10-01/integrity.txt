@@ -1,0 +1,82 @@
+(node:32166) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/sineadhoben/Documents/ChatGPT/New%20People%20to%20Follow/transfer-trainer-mobile/src/content.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/sineadhoben/Documents/ChatGPT/New People to Follow/transfer-trainer-mobile/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ All 91 English closed items have exactly one independently supported answer (113.107292ms)
+✔ Every offered English option is graded against evidence, regardless of display order (8.724375ms)
+✔ All word-tile permutations have precisely one correct sequence; incomplete selections are not penalised (1.201916ms)
+✔ English corrupted keys, changed evidence, ambiguous or duplicate options cannot mark a child wrong (2.024541ms)
+✔ Open-ended tasks never enter an automatic single-answer grader (0.711041ms)
+✔ Closed questions preserve the scope of text evidence and explicit punctuation conventions (0.249459ms)
+(node:32167) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/sineadhoben/Documents/ChatGPT/New%20People%20to%20Follow/transfer-trainer-mobile/src/content.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/sineadhoben/Documents/ChatGPT/New People to Follow/transfer-trainer-mobile/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Every closed maths item has a separate hint-method calculation and frozen question inputs (18.013459ms)
+✔ Every maths item accepts a correct response and rejects a wrong one only when checks agree (18.362083ms)
+✔ Corrupt answer keys and changed guidance fail safely for all 640 items (26.743ms)
+✔ Reported regression: 4 m by 2 m drawing and 8 m² is acknowledged, never marked wrong (5.631209ms)
+✔ Correct target answer is acknowledged when garden controls are unfinished or rotated (0.307875ms)
+✔ Perimeter and pond checks use the current drawing for construction feedback (0.169875ms)
+✔ Incomplete baskets and tile models receive specific feedback, not a wrong maths mark (0.566667ms)
+✔ Equivalent decimal notation is accepted; malformed input is not an unsuccessful maths attempt (0.3385ms)
+✔ Damaged structured question inputs fail closed before computation (0.79625ms)
+✔ Exact owner report: 2 by 4 garden, one quarter pond, 6 m² remains in either orientation (0.587792ms)
+✔ All garden questions accept a rotated rectangle with the same dimensions (0.41725ms)
+✔ Every maths option is checked, with unchanged results when the offered order is reversed (2.115875ms)
+✔ Sequential and precedence-sensitive questions reject common reordering mistakes (1.3885ms)
+✔ A near-but-unequal decimal can never be accepted by a numeric tolerance (0.458625ms)
+(node:32168) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/sineadhoben/Documents/ChatGPT/New%20People%20to%20Follow/transfer-trainer-mobile/src/content.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/sineadhoben/Documents/ChatGPT/New People to Follow/transfer-trainer-mobile/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ All 186 challenges have complete learning guidance (5.995833ms)
+✔ Money uses integer pence, quantities and exact change (19.675375ms)
+✔ Garden: independent area, perimeter and remaining area calculations (5.680834ms)
+✔ Fractions and data agree with independently computed values (1.08375ms)
+✔ Word order is checked, not merely selected word count (0.564875ms)
+✔ Blank, nonfinite and malformed numeric values never count as correct (0.129709ms)
+✔ Adaptation is transparent and does not treat reflections as mastery (18.606042ms)
+✔ Progress round trips and corrupt data is rejected without overwriting it (2.100166ms)
+✔ Business links require safe HTTPS addresses (0.317375ms)
+✔ Every curriculum register entry resolves to an implemented activity (2.961375ms)
+✔ All closed questions accept their solution and reject an incorrect answer (33.830708ms)
+✔ Expanded numeric answers independently agree with domain calculations (1.5335ms)
+✔ Adult feedback adapts only the reviewed topic and persists (0.249667ms)
+✔ Two children using independent devices retain independent progress (0.170458ms)
+✔ Turtle programs draw correct paths and reject executable or excessive input (7.256666ms)
+✔ Scene migration hands startup to Expo scene delegate and is repeatable (3.9075ms)
+(node:32170) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/sineadhoben/Documents/ChatGPT/New%20People%20to%20Follow/transfer-trainer-mobile/src/parentAccess.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/sineadhoben/Documents/ChatGPT/New People to Follow/transfer-trainer-mobile/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Parent PIN uses a digest, validates input and retains cooldown across reload (86.769417ms)
+(node:32171) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/sineadhoben/Documents/ChatGPT/New%20People%20to%20Follow/transfer-trainer-mobile/src/content.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/sineadhoben/Documents/ChatGPT/New People to Follow/transfer-trainer-mobile/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ All shop item orders, levels and intermediate edits reopen without losing other work (51.375959ms)
+✔ Legacy null basket slots recover at every level and preserve all unrelated fields (9.639334ms)
+✔ Unrelated malformed data is not silently repaired or overwritten (1.877167ms)
+✔ Rejected saves preserve the previous record and retry saves the latest full snapshot (3.170917ms)
+✔ Queued edits retain order, snapshot values and do not announce stale completion (0.494083ms)
+(node:32172) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/sineadhoben/Documents/ChatGPT/New%20People%20to%20Follow/transfer-trainer-mobile/src/model.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/sineadhoben/Documents/ChatGPT/New People to Follow/transfer-trainer-mobile/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ All 88 mapped areas provide concrete projects, resources, guidance and observable criteria (4.383792ms)
+✔ Every practice step has a worked example and anchored review criteria (86.541ms)
+✔ Original reading library includes eight sustained texts and varied genres (47.741583ms)
+✔ Project versions, tables, diagrams and reviews survive saving and reopening alongside existing records (12.606292ms)
+✔ Malformed project data is rejected without losing or rewriting existing records (2.375416ms)
+✔ Repeated answers do not raise difficulty; distinct independent answers do and unsuccessful drafts step down (51.710416ms)
+✔ 11 and 12 extension includes every additional ordered product and inverse through 12×12 (0.79925ms)
+ℹ tests 49
+ℹ suites 0
+ℹ pass 49
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1344.804291
+Learning integrity software gate passed. Human review and device checks remain separate release requirements.
