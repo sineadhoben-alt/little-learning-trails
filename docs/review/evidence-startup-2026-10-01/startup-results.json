@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "iosBuild": 9,
+  "standaloneRelease": true,
+  "tests": [
+    {
+      "device": "iPhone 18 Pro",
+      "os": "iOS 27.0",
+      "result": "passed"
+    },
+    {
+      "device": "iPad Pro 13-inch (M5)",
+      "os": "iOS 26.5",
+      "result": "passed"
+    }
+  ],
+  "checks": [
+    "home/welcome renders after cold launch",
+    "terminate and relaunch",
+    "background and reactivate"
+  ],
+  "physicalOwnerRetest": "pending",
+  "artifactSha256": {
+    "LittleLearningTrails-build9.xcarchive.zip": "38c09cdd521f5e08bae0f12c065897532823a584ec6e9e2c1d8ce888e3d0f76f"
+  }
+}

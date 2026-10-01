@@ -115,3 +115,9 @@ Owner explicitly approved build 8. Apple showed compliance already cleared (Read
 ## Build 8 startup blocker / build 9 repair in progress
 
 Owner reports TestFlight 0.2.0 (8) opens to a blank white screen on both iPhone and iPad. The actual build-8 archive omitted the existing scene-lifecycle configuration. Build 8's successful upload and group attachment did not prove startup. Treat build 8 as affected. Build 9 restores the native scene/factory integration and adds actual generated/packaged startup checks; 55 tests pass. Standalone launch verification and the replacement upload are still pending. No saved records have been erased. See ../review/IOS-STARTUP-2026-10-01.md.
+
+### Build 9 delivered to owner testing — 1 October
+
+Corrected iOS build 0.2.0 (9) archive and upload succeeded. Actual archive startup configuration and version verified. Standalone Release iPhone 18 Pro/iOS 27 and iPad Pro 13-inch/iOS 26.5 UI tests passed for startup, terminate/reopen and background/reactivate; extended reopening checks preserve onboarding and saved challenge count. 55 integrity tests and strict TypeScript pass. Framework symbol warnings remain a crash-diagnostics limitation.
+
+Apple processed build 9 and cleared compliance before the agent submitted any declaration in this follow-up. Owner beta checks attached with one internal tester; startup-focused What to Test saved and visibly confirmed. No external group or public release submitted. Owner should update the existing TestFlight installation to 0.2.0 (9), preserving its saved work, and confirm startup on the affected physical iPhone/iPad. Android remains build 8. Source/evidence: ../review/IOS-STARTUP-2026-10-01.md.

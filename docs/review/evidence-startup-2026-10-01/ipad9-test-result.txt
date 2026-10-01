@@ -1,0 +1,12 @@
+Test Suite 'All tests' started at 2026-10-01 17:54:55.139.
+Test Suite 'StartupChecks.xctest' started at 2026-10-01 17:54:55.141.
+Test Suite 'StartupChecks' started at 2026-10-01 17:54:55.141.
+Test Case '-[StartupChecks.StartupChecks testStandaloneColdLaunchAndReopen]' started.
+Test Case '-[StartupChecks.StartupChecks testStandaloneColdLaunchAndReopen]' passed (45.423 seconds).
+Test Suite 'StartupChecks' passed at 2026-10-01 17:55:40.570.
+	 Executed 1 test, with 0 failures (0 unexpected) in 45.423 (45.429) seconds
+Test Suite 'StartupChecks.xctest' passed at 2026-10-01 17:55:40.571.
+	 Executed 1 test, with 0 failures (0 unexpected) in 45.423 (45.430) seconds
+Test Suite 'All tests' passed at 2026-10-01 17:55:40.571.
+	 Executed 1 test, with 0 failures (0 unexpected) in 45.423 (45.433) seconds
+** TEST SUCCEEDED **

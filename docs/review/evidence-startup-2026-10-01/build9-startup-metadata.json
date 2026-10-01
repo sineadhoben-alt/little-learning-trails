@@ -1,0 +1,17 @@
+{
+  "CFBundleShortVersionString": "0.2.0",
+  "CFBundleVersion": "9",
+  "CFBundleIdentifier": "com.transfertrainerni.learning.preview",
+  "DTSDKName": "iphoneos27.0",
+  "UIApplicationSceneManifest": {
+    "UIApplicationSupportsMultipleScenes": false,
+    "UISceneConfigurations": {
+      "UIWindowSceneSessionRoleApplication": [
+        {
+          "UISceneConfigurationName": "Default Configuration",
+          "UISceneDelegateClassName": "EXExpoAppSceneDelegate"
+        }
+      ]
+    }
+  }
+}

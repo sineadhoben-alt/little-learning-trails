@@ -1,0 +1,8 @@
+{
+  "app.json": "fb2d956c4cbb578a5e34ca93d55a7755a5f69fc671da62444e8c12d65cec090b",
+  "plugins/withSceneLifecycle.cjs": "cea1195e5134591e93db632b44e4ab1cc5597cffe2b57d3f2c2809446c772d54",
+  "scripts/verify-ios-startup.mjs": "d3e433eea3df8a8360af4bf1bcd90498f2d7598c4d0d29ddf6006b6ae6e39692",
+  "tests/native-startup/StartupChecks.swift": "b5b000c2b184e4f664c4a104aca116cd80d84537f22cb6d2ef031eb54f05b5e6",
+  "ios/LittleLearningTrails/AppDelegate.swift": "71910669e7848c1e8269dc6f3c41e02a3fdf63219dfcbf508fcfd95c87cba6c1",
+  "ios/LittleLearningTrails/Info.plist": "7dc5e30d99d60864d9332fa45795e6735d50e344c41c225ceae95c1f5b2f9804"
+}

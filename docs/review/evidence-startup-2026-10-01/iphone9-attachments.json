@@ -1,0 +1,17 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "481AC0A2-9814-4D99-9FC4-FC54D2CD0BD6",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "9937B78F-A34F-45C3-AF80-66DBD15320BE.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Standalone build 9 home_0_2980C6AD-6FBE-40BC-A2F1-64E70FA9828B.png",
+        "timestamp" : 1790873625.477
+      }
+    ],
+    "testIdentifier" : "StartupChecks/testStandaloneColdLaunchAndReopen()",
+    "testIdentifierURL" : "test://com.apple.xcode/StartupChecks/StartupChecks/StartupChecks/testStandaloneColdLaunchAndReopen"
+  }
+]

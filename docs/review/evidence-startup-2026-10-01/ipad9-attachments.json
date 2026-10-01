@@ -1,0 +1,17 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8D06C7D5-75BF-4280-ACEE-33A7C10EFB6D",
+        "deviceName" : "iPad Pro 13-inch (M5)",
+        "exportedFileName" : "0F0B57F7-1784-4EB2-8FCD-E54C05301B45.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Standalone build 9 home_0_5AF1625B-063E-4FFA-BE23-8ADE83A595B4.png",
+        "timestamp" : 1790873715.828
+      }
+    ],
+    "testIdentifier" : "StartupChecks/testStandaloneColdLaunchAndReopen()",
+    "testIdentifierURL" : "test://com.apple.xcode/StartupChecks/StartupChecks/StartupChecks/testStandaloneColdLaunchAndReopen"
+  }
+]
